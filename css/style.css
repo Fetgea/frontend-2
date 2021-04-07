@@ -86,8 +86,9 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.logo img {
-    width: auto;
+
+.logo {
+    flex: 0 1 186px;
 
 }
 
@@ -543,11 +544,7 @@ a {
 }
 
 
-@media (min-width: 1024px) {
-    .logo img {
-        max-width: 186px;
-    }
-}
+
 
 @media (max-width: 1024px) {
     
@@ -705,9 +702,10 @@ a {
     }
 }
 
-@media (min-width: 600px) and (max-width:1024px)  {
+@media (min-width: 768px) and (max-width:1024px)  {
 
     .galleryImageTest {
         object-fit: cover;
     }
 }
+
