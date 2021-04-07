@@ -243,7 +243,7 @@ a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -ms-flex-preferred-size: 1 1 75%;
-        flex-basis: 1 1 75%;
+        flex-basis: 75%;
 
 }
 .featureImgBlock img:first-child {
@@ -839,7 +839,7 @@ a {
         -o-object-fit:none;
            object-fit:none;
         -o-object-position: center;
-           object-position: center;  
+           object-position: center;
     }
     .galleryImgListTest.evenRow {
         display: none;
