@@ -10,9 +10,11 @@
 <header class="header">
     <section class="headerNav">
         <div class="logo">
-            <img src="img/logo-light.png" alt="" loading="lazy">
+            <a href="#">
+                <img src="img/logo-light.png" alt="" loading="lazy">
+            </a>
         </div>
-        <nav>
+        <nav id="navigation" class="navigationList removed"> 
             <ul class="headerNavigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Product</a></li>
@@ -21,7 +23,7 @@
             </ul>
         </nav>
         <a class="button buttonTransparent buttonLogin" href="#">Login</a>
-        <button class="buttonBurger" type="button"></button>
+        <button id="buttonBurger" class="buttonBurger" type="button"></button>
     </section>
     <section class="headerHeading">
         <div class="headerWelcome">
@@ -49,20 +51,20 @@
                 <img src="img/features-2.png" width="400" height="276" alt="Line Chart" loading="lazy">
             </div>
             <ul class="featureDescriptionBlock">
-                <li>
-                    <h3 class=" feature feature1">A single source of truth</h3>
+                <li class="feature">
+                    <h3 class=" featureHeading feature1">A single source of truth</h3>
                     <p>When you add work to your Slate calendar we automatically calculate useful insights</p>
                 </li>
-                <li>
-                    <h3 class=" feature feature2">Intuitive interface</h3>
+                <li class="feature">
+                    <h3 class=" featureHeading feature2">Intuitive interface</h3>
                     <p>When you add work to your Slate calendar we automatically calculate useful insights</p>
                 </li>
-                <li>
-                    <h3 class="feature feature3">Or with rules</h3>
+                <li class="feature">
+                    <h3 class="featureHeading feature3">Or with rules</h3>
                     <p>When you add work to your Slate calendar we automatically calculate useful insights</p>
                 </li>
             </ul>
-        </div>     
+        </div>
     </section>
     <section class="contents">
         <div class="subheader">
@@ -107,7 +109,7 @@
     <section class="partners">
         <div class="subheader">
             <h2>Partners</h2>
-            <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+            <p>We focus on ergonomics and meeting you where you work.<br> It's only a keystroke away.</p>
         </div>
         <ul class="partnersList">
             <li><img src="img/svg/logos_airbnb.svg" alt="" loading="lazy"></li>
@@ -166,18 +168,17 @@
             </div>
         </div>
     </section>
-    <section class="ctaWrapper">
-        <div class="cta">
-            <div class="ctaHeader">
-                <h2>OpenType feature and Variable fonts</h2>
-                <a class="button buttonBlue buttonCta" href="#">Try For Free</a>
-            </div>
-            <div class="ctaImg">
-                <img src="img/cta.jpg" alt="Ad" loading="lazy">
-            </div>
-        </div>
-    </section>
 </main>
+<aside class="ctaWrapper">
+    <div class="cta">
+        <div class="ctaHeader">
+            <h2>OpenType feature and Variable fonts</h2>
+            <a class="button buttonBlue buttonCta" href="#">Try For Free</a>
+        </div>
+        <img class="ctaImg" src="img/cta.jpg" alt="Ad" loading="lazy">
+
+    </div>
+</aside>
 <footer class="footer container">
         <div class="footerNavItem">
             <h3>Fingertipe</h3>
@@ -210,11 +211,12 @@
         <p class="contactsAddress">7480 Mockingbird Hill undefined </p>
         <a class="contactsPhone" href="tel:2395550108">(239) 555-0108</a>
         <div class="socials">
-            <a href="#" class="socialsTwitter"></a>
-            <a href="#" class="socialsFacebook"></a>
-            <a href="#" class="socialsLinkedIn"></a>
+            <a href="#" class="socialsTwitter" target="_blank"></a>
+            <a href="#" class="socialsFacebook" target="_blank"></a>
+            <a href="#" class="socialsLinkedIn" target="_blank"></a>
         </div>
     </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
