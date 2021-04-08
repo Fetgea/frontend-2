@@ -110,6 +110,10 @@ a:hover {
             flex: 0 1 186px;
 }
 
+.logo img {
+    cursor: pointer;
+}
+
 .headerNavigation {
     list-style: none;
     padding: 0;
@@ -205,7 +209,9 @@ a:hover {
 .buttonLogin {
     padding: 13.5px 46px;
 }
-
+.buttonLogin.mobileView {
+    margin: 0 66px 0 0;
+}
 .buttonContents {
     padding: 13.5px 46px;
 }
@@ -307,7 +313,7 @@ a:hover {
 
 .featureHeading {
     position: relative;
-    margin: 0 64px 20px 20px;
+    margin: 0 40px 20px 20px;
     padding: 0 10px;
 }
 
@@ -782,13 +788,18 @@ a:hover {
     .buttonBurger {
         display: block;
         border: none;
+        min-width: 44px;
         width: 66px;
         height: 53px;
         margin: 0 0 0 16px;
         background: url("../img/svg/menu_burger.svg") no-repeat center;
         z-index: 2;
+        flex-shrink: 0;
+        
     }
-
+    .buttonBurger:focus {
+        outline:none;
+    }
     .features .subheader {
         margin-bottom: 27px;
     }
@@ -926,7 +937,7 @@ a:hover {
 
     .footerContacts {
         margin: 75px 0 107px;
-    } 
+    }
 
     .galleryImgListTest {
         display: -webkit-box;
@@ -940,7 +951,7 @@ a:hover {
             -ms-flex-pack: start;
                 justify-content: flex-start;
         padding: 0 20px;
-    }   
+    }
 
     .galleryImageTest {
         min-height: 285px;
@@ -963,4 +974,92 @@ a:hover {
         -o-object-fit: cover;
            object-fit: cover;
     }
+}
+
+
+@media (max-width:480px) {
+    h1 {
+        font-size: 52px;
+        line-height: 62px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .button {
+        padding: 9px 20px;
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: initial;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .navigationList {
+        width: 100%;
+    }
+
+    .buttonBurger {
+        width: 50px;
+        height: 40px;
+    }
+
+    @keyframes slidein {
+        from {
+          margin-left: 150%;
+          width: 0%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+    }
+    .featureDescriptionBlock {
+        width: 85%;
+    }
+    .featureHeading {
+        margin-right: 0px;
+    } 
+      
+    .partnersList {
+        grid-template-columns: auto auto;
+    }
+
+    .testimonyCard {
+        padding: 40px 20px;
+    }
+
+    .reviewerInfo h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .reviewerInfo {
+        flex-wrap: nowrap;
+    }
+    .reviewerInfo {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    .cta {
+        padding: 104px 20px 0;  
+    }
+    .ctaImg {
+        max-height: 70vw;
+    }
+    .footer {
+        padding: 107px 0 107px 20%;
+    }
+
+    
 }
