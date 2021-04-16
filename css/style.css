@@ -8,7 +8,7 @@
     --secondary-background: #EFEFEF;
     --testimonials-border: #DEDEDE;
     --cta-background: #343434;
-    --cta-background-mobile: #1E1E1E;   
+    --cta-background-mobile: #1E1E1E;
 }
 
 @font-face {
@@ -187,9 +187,11 @@ a:hover {
 .buttonLogin {
     padding: 13.5px 46px;
 }
+
 .buttonLogin.mobileView {
     margin: 0 66px 0 0;
 }
+
 .buttonContents {
     padding: 13.5px 46px;
 }
@@ -218,7 +220,9 @@ a:hover {
     background-color: var(--primary-white);
     color: var(--primary-black);
 }
+
 /* Features */
+
 .features {
     padding: 162px 0 62px;
     max-width: 1020px;
@@ -311,6 +315,7 @@ a:hover {
 }
 
 /* Contents block*/
+
 .contents {
     padding: 60px 0 50px;
     max-width: 985px
@@ -438,7 +443,6 @@ a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
-    /*Убрать на мобильной версии*/
     max-height: 1000px;
 }
 
@@ -488,7 +492,7 @@ a:hover {
 .cta {
     display: flex;
     justify-content: space-between;
-    padding: 36px  0 0 0;
+    padding: 36px 0 0 0;
     background-color: var(--cta-background);
     border-radius: 33px;
     overflow: hidden;
@@ -915,7 +919,7 @@ a:hover {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px)  {
+@media (min-width: 768px) and (max-width: 1024px) {
     .galleryImageTest {
         -o-object-fit: cover;
            object-fit: cover;
@@ -1015,7 +1019,7 @@ a:hover {
     }
     
     .cta {
-        padding: 104px 20px 0;  
+        padding: 104px 20px 0;
     }
 
     .ctaImg {
