@@ -442,19 +442,19 @@ a:hover {
 
 .testimonyColumns {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    max-height: 1000px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
+.column {
+    max-width: calc(50% - 20px);
+}
 .testimonyCard {
     box-sizing: border-box;
     border: 1px solid var(--testimonials-border);
     border-radius: 10px;
     margin: 0 0 20px 0;
     padding: 40px;
-    max-width: calc(50% - 24px);
 }
 
 .reviewerInfo {
@@ -842,7 +842,11 @@ a:hover {
     }
 
     .testimonyColumns {
-        max-height: initial;
+        flex-wrap: wrap;
+    }
+
+    .column {
+        max-width: 100%;
     }
 
     .testimonyCard {
@@ -923,7 +927,7 @@ a:hover {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 700px) and (max-width: 1024px) {
     .galleryImageTest {
         -o-object-fit: cover;
            object-fit: cover;
