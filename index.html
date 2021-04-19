@@ -47,8 +47,17 @@
         </div>
         <div class="featureItem">
             <div class="featureImgBlock">
-                <img src="img/features-1.png" width="696" height="659" alt="Chat bot" loading="lazy">
-                <img src="img/features-2.png" width="400" height="276" alt="Line Chart" loading="lazy">
+                <picture>
+                    <source srcset="img/features-1-mobile.webp" media="(max-width: 490px)" type="image/webp">
+                    <source srcset="img/features-1.webp" media="(min-width: 491px)" type="image/webp">
+                    <source srcset="img/features-1-mobile.jpg" media="(max-width: 490px)" type="image/jpeg">
+                    <source srcset="img/features-1.mobile" media="(min-width: 491px)" type="image/jpeg">
+                    <img loading="lazy" src="img/features-1.jpg" alt="Chat Bot">
+                </picture>
+                <picture>
+                    <source srcset="img/features-2.webp" type="image/webp">
+                    <img loading="lazy" src="img/features-2.jpg" alt="Chat Bot">
+                </picture>
             </div>
             <ul class="featureDescriptionBlock">
                 <li class="feature">
@@ -78,13 +87,19 @@
                     <p>Ever wondered if you're too reliant on a client for work? Slate helps you identify.</p>
                 </div>
                 <a href="#" class="button buttonBlue buttonContents">Sign Up</a>
-                <img src="img/contents-1.png" alt="" width="405" height="226" loading="lazy">
+                <picture>
+                    <source srcset="img/contents-1.webp" type="image/webp">
+                    <img loading="lazy" src="img/contents-1.png">
+                </picture>
             </div>
             <div class="card">
                 <h3>Design with real data</h3>
                 <p>Ever wondered if you're too reliant on a client for work? Slate helps you identify.</p>
                 <a href="#" class="button buttonBlue buttonContents">Try For Free</a>
-                <img src="img/contents-2.png" alt="" width="379" height="276" loading="lazy">
+                <picture>
+                    <source srcset="img/contents-2.webp" type="image/webp">
+                    <img loading="lazy" src="img/contents-2.jpg">
+                </picture>
             </div>
         </div>
     </section>
@@ -94,15 +109,36 @@
             <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
         </div>
         <div class="galleryImgListTest oddRow">
-            <img class="galleryImageTest" src="img/gallery-1.png" alt="" loading="lazy">
-            <img class="galleryImageTest" src="img/gallery-2.jpg" alt="" loading="lazy">
-            <img class="galleryImageTest" src="img/gallery-3.jpg" alt="" loading="lazy">
-            <img class="galleryImageTest" src="img/gallery-4.png" alt="" loading="lazy">
+            <picture class="galleryImageTest">
+                <source srcset="img/gallery-1.webp" type="image/webp">
+                <img loading="lazy" src="img/gallery-1.jpg">
+            </picture>
+            <picture class="galleryImageTest">
+                <source srcset="img/gallery-2.webp" type="image/webp">
+                <img loading="lazy" src="img/gallery-1.jpg">
+            </picture>
+            <picture class="galleryImageTest">
+                <source srcset="img/gallery-3.webp" type="image/webp">
+                <img loading="lazy" src="img/gallery-1.jpg">
+            </picture>
+            <picture class="galleryImageTest">
+                <source srcset="img/gallery-4.webp" type="image/webp">
+                <img loading="lazy" src="img/gallery-1.jpg">
+            </picture>
         </div>
         <div class="galleryImgListTest evenRow">
-            <img class="galleryImageTest" src="img/gallery-5.jpg" alt="" loading="lazy">
-            <img class="galleryImageTest" src="img/gallery-6.png" alt="" loading="lazy">
-            <img class="galleryImageTest" src="img/gallery-7.jpg" alt="" loading="lazy">
+            <picture class="galleryImageTest">
+                <source srcset="img/gallery-5.webp" type="image/webp">
+                <img loading="lazy" src="img/gallery-1.jpg">
+            </picture>
+            <picture class="galleryImageTest">
+                <source srcset="img/gallery-6.webp" type="image/webp">
+                <img loading="lazy" src="img/gallery-1.jpg">
+            </picture>
+            <picture class="galleryImageTest">
+                <source srcset="img/gallery-7.webp" type="image/webp">
+                <img loading="lazy" src="img/gallery-1.jpg">
+            </picture>
         </div>
         <a class="button buttonTransparent galleryButton" href="#">See more</a>
     </section>
@@ -179,7 +215,10 @@
             <h2>OpenType feature and Variable fonts</h2>
             <a class="button buttonBlue buttonCta" href="#">Try For Free</a>
         </div>
-        <img class="ctaImg" src="img/cta.jpg" alt="Ad" loading="lazy">
+        <picture class="ctaImg">
+            <source srcset="img/cta.webp" type="image/webp">
+            <img  src="img/cta.jpg" alt="Ad" loading="lazy">
+        </picture>
     </div>
 </aside>
 <footer class="footer container">

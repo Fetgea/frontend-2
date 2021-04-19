@@ -254,14 +254,15 @@ a:hover {
     flex-basis: 75%;
 }
 
-.featureImgBlock img:first-child {
+.featureImgBlock picture:first-child img {
     padding: 0 28px 100px;
 }
 
-.featureImgBlock img:last-child {
+.featureImgBlock picture:last-child img {
     position: absolute;
     right: 0;
     bottom: 0;
+    object-fit: contain;
     max-width: 75%;
 }
 
@@ -341,7 +342,7 @@ a:hover {
     border-radius: 14px;
     text-align: center;
     color: var(--secondary-black);
-    padding: 40px 0;
+    padding: 40px 40px;
     flex: 0 1 calc(50% - 33px);
 }
 
@@ -387,6 +388,11 @@ a:hover {
     max-width: 225px;
     border-radius: 14px;
     margin: 0 33px 0 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.galleryImageTest img {
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -523,6 +529,10 @@ a:hover {
        object-fit: none;
 }
 
+.ctaImg img {
+    width: 100%;
+}
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -627,6 +637,7 @@ a:hover {
         padding-top: 70%;
         background-size: 120%;
         background-position: top;
+        background-image: url("../img/background-image-mobile.png")
     }
 
     .container {
@@ -748,11 +759,11 @@ a:hover {
     }
 
     .featureImgBlock,
-    .featureImgBlock img:first-child {
+    .featureImgBlock picture:first-child img {
         padding: 0;
     }
 
-    .featureImgBlock img:last-child {
+    .featureImgBlock picture:last-child img {
         bottom: 0;
         left: 12%;
     }
@@ -878,14 +889,20 @@ a:hover {
     }
 
     .ctaImg {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
         max-height: 60vw;
-        width: 100vw;
+        width: 100%;
         -o-object-fit: cover;
            object-fit: cover;
         -o-object-position: center;
            object-position: center;
     }
 
+    .ctaImg img {
+        height: 100%;
+    }
     .footer {
         padding: 107px 0 107px 10vw;
         flex-direction: column;
@@ -920,6 +937,10 @@ a:hover {
            object-fit: none;
         -o-object-position: center;
            object-position: center;
+    }
+
+    .galleryImageTest img {
+        width: 100%;
     }
 
     .galleryImgListTest.evenRow {
