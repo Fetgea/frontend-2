@@ -15,5 +15,15 @@ buttonBurger.addEventListener('click', (evt) => {
         navigation.classList.add('removed');
         buttonLogin.style.marginRight = 0;
         buttonBurger.classList.remove('fixed');
-    }    
-})
+    }
+});
+$( document ).ready(function() {
+    $(".readMore").readmore({
+        collapsedHeight: 200,
+        speed: 75,
+        lessLink: "<a class='buttonReadMore' href='#'>Скрыть</a>",
+        moreLink: "<a class='buttonReadMore' href='#'>Читать далее</a>"  
+      });
+});
+
+  
