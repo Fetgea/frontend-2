@@ -21,8 +21,8 @@ $( document ).ready(function() {
     $(".readMore").readmore({
         collapsedHeight: 200,
         speed: 75,
-        lessLink: "<a class='buttonReadMore' href='#'>Скрыть</a>",
-        moreLink: "<a class='buttonReadMore' href='#'>Читать далее</a>"  
+        lessLink: "<a class='buttonReadMore' href='#'>Hide</a>",
+        moreLink: "<a class='buttonReadMore' href='#'>Read more</a>"  
       });
 });
 
