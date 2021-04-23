@@ -453,7 +453,13 @@ a:hover {
 }
 
 .column {
+    position: relative;
     max-width: calc(50% - 20px);
+}
+.testimonyCardAppend {
+    content: " ";
+    display: block;
+    width: 100%;
 }
 .testimonyCard {
     box-sizing: border-box;
@@ -461,6 +467,7 @@ a:hover {
     border-radius: 10px;
     margin: 0 0 20px 0;
     padding: 40px;
+    background-color: var(--dark-background);
 }
 
 .reviewerInfo {
