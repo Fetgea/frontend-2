@@ -27,7 +27,6 @@ jQuery.fn.extend({
 });
 
 $(document).ready(function() {
-
     let clicked = false;
     $(".readMore").readmore({
         afterToggle: (trigger, element, expanded) => {
